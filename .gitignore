@@ -1,0 +1,62 @@
+# 依赖
+node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# 构建产物
+dist/
+dist-ssr/
+build/
+*.local
+
+# Rust / Tauri
+src-tauri/target/
+src-tauri/gen/
+src-tauri/Cargo.lock.orig
+**/*.rs.bk
+*.pdb
+
+# 打包产物
+*.app
+*.dmg
+*.exe
+*.msi
+*.deb
+*.rpm
+*.AppImage
+*.sig
+*.wixpdb
+*.wixobj
+
+# 依赖缓存
+.npm
+.eslintcache
+.cache
+.temp
+.tmp
+*.log
+logs
+
+# 环境变量
+.env
+.env.*
+!.env.example
+
+# 编辑器 / IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.fleet/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
