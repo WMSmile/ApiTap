@@ -2,12 +2,12 @@ name: "Publish"
 
 on:
   push:
-    branches:
-      - release
-      - main
+    # branches:
+    #   - release
+    #   - main
     # 也可以通过打 Tag 触发发布，例如 v*
-    # tags:
-    #   - 'v*'
+    tags:
+      - 'v*'
 
 jobs:
   publish-tauri:
