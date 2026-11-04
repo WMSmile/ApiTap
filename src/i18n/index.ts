@@ -189,7 +189,7 @@ const zh = {
     title: "导入请求",
     hint: "粘贴 cURL 命令、原始 HTTP 请求、Postman 集合、HAR 或 OpenAPI 文档。",
     placeholder:
-      "curl -X POST https://api.example.com/users \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"name\":\"test\"}'",
+      "curl -X POST https://api.example.com/users \\\n  -H 'Content-Type: application/json' \\\n  -d '{body}'",
     doImport: "导入",
     importToCurrent: "导入到当前请求",
     importToCollection: "导入为集合",
@@ -405,7 +405,7 @@ const en = {
     title: "Import Request",
     hint: "Paste a cURL command, raw HTTP request, Postman collection, HAR or OpenAPI document.",
     placeholder:
-      "curl -X POST https://api.example.com/users \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"name\":\"test\"}'",
+      "curl -X POST https://api.example.com/users \\\n  -H 'Content-Type: application/json' \\\n  -d '{body}'",
     doImport: "Import",
     importToCurrent: "Import into current request",
     importToCollection: "Import as collection",

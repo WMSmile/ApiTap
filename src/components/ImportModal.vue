@@ -30,6 +30,15 @@ const detected = computed<ImportResult | null>(() => {
 
 const targets = computed(() => flattenCollections());
 
+/**
+ * The example contains JSON braces. It is passed as an interpolation value
+ * instead of being part of the message template, because vue-i18n parses
+ * `{...}` inside messages as placeholders and would throw at runtime.
+ */
+const placeholderText = computed(() =>
+  t("import.placeholder", { body: '{"name":"test"}' })
+);
+
 const formatLabel = computed(() => {
   const d = detected.value;
   if (!d) return "";
@@ -91,7 +100,7 @@ function onImport() {
       <textarea
         v-model="text"
         class="import-text"
-        :placeholder="t('import.placeholder')"
+        :placeholder="placeholderText"
         spellcheck="false"
       ></textarea>
 
