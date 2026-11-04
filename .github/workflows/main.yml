@@ -39,6 +39,11 @@ jobs:
 
       - name: Install Rust stable
         uses: dtolnay/rust-toolchain@stable
+      
+      # 👉 在这里补上这步，为 macOS 补充 Intel 架构目标
+      - name: Add x86_64 target for macOS
+        if: matrix.platform == 'macos-latest'
+        run: rustup target add x86_64-apple-darwin
 
       - name: Setup Rust cache
         uses: swatinem/rust-cache@v2
