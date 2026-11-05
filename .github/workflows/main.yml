@@ -3,7 +3,7 @@ name: "Publish Release"
 on:
   push:
     tags:
-      - 'v*'
+      - 'vvvv*'
   workflow_dispatch:
 
 # 避免多次推送导致任务排队卡死
