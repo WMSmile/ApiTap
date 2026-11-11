@@ -29,6 +29,22 @@
 
 ---
 
+## 🖼️ 界面预览
+
+### 主界面布局
+
+左侧为集合 / 历史 / 环境侧边栏，中间为请求配置区（方法 + URL + 参数 / 请求头 / 请求体 / 授权），下方为响应展示区（状态码、耗时、体积、美化 / 原始 / 响应头）。
+
+![ApiTap 主界面](./docs/screenshots/main-interface.png)
+
+### 导入请求
+
+点击顶部「导入」，可粘贴 cURL 命令、原始 HTTP 请求、Postman 集合、HAR 或 OpenAPI 文档，一键导入到当前请求。
+
+![导入请求](./docs/screenshots/import-request.png)
+
+---
+
 ## 🧱 技术栈
 
 | 层 | 技术 |
@@ -90,6 +106,8 @@ ApiTap1/
 ├── package.json               # 前端依赖与脚本
 ├── vite.config.ts             # Vite 配置（端口 1420，固定端口供 Tauri 使用）
 ├── tsconfig*.json             # TypeScript 配置
+├── docs/
+│   └── screenshots/           # README 展示截图（不参与打包）
 ├── src/                       # 前端源码（Vue 3 + TS）
 │   ├── main.ts                # 应用入口
 │   ├── App.vue                # 根组件 / 整体布局
